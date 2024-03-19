@@ -10,6 +10,7 @@ app.use(cors());
 const uri =
 	'mongodb+srv://user123:Password123%23@cluster0.pqgobar.mongodb.net/mern2?retryWrites=true&w=majority&appName=Cluster0';
 
+mongoose.set('strictQuery', false);
 mongoose.connect(uri, {
 	useNewUrlParser: true,
 });
